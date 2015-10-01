@@ -1,0 +1,59 @@
+
+
+1)What is code repository?
+It is a place where you store your source code, documents etc. examples of code repository are Bit bucket, Github etc.
+Why is it advantageous to use a code repository?
+Advantage of code repository are 
+i)	Safe keeping of code 
+ii)	To store codes and documents
+iii)	Easier for testing 
+Describe the different “layers” of Software that exist on a typical Computer and explain why there are different layers of software.
+Different layers of software are operating system like windows or mac OS, so that computer can function and be able to use other level of software’s.
+Application software
+Uses the capabilities of a computer to a task that the user wishes to perform. Like 
+Antivirus, Ms Office
+Describe what an algorithm is and explain why it is a useful “tool” to translate from a human level problem (we can think of) to a computer program.
+Step to step guides or procedures which are followed to complete task 
+So that computer can understand.
+2)Write an algorithm that describes how to make scrambled eggs, try to use control words, like IF, WHEN, UNTIL, WHILE, WAIT, AND, OR.
+
+Get eggs
+Break shell of eggs
+Heat pan until it is hot
+Add butter in pan
+While waiting scrambled an eggs
+If it is hot add egg in pan 
+Wait for 1 minute 
+When ready flip the eggs
+Wait until it is cooked
+While waiting get plate
+When ready move it on plate
+3)Is idle (the Python language shell) an Interpreter or a Compiler or both? Explain your answer.
+Idle is an interpreter because it translates and executes the instructions only one command at a time.
+4)
+print("Hello world")
+print("Hello world.I am in my lsd class right now.")
+varibale=input("Hi there What is your name?")
+print("hello",varibale,"How are you?")
+var2=int(input("Type a number"))
+var3=var2+4
+print(var3)
+var4=int(input("Type a number"))
+var5=var3*var4
+print(var5)
+print("Thank you",varibale)
+
+
+Hello world
+Hello world.I am in my lsd class right now.
+Hi there What is your name?amit
+hello amit How are you?
+Type a number2
+6
+Type a number1
+6
+Thank you amit
+>>> 
+  
+ 
+ 
