@@ -1,0 +1,42 @@
+Which of the following conditions are true, if a is 13 and b is 14?
+a + 1 <= b  True
+a + 1 >= b True	
+a + 1 != b False
+
+What is the error in this statement?
+if scoreA = scoreB :  
+        print("Tie")
+Because equal to sign in python is ==
+
+Supply a condition in this if statement to test whether the user entered a Y:
+userInput = input("Enter Y to quit.")
+if userInput == “Y”
+print("Goodbye")
+Find the errors in the following if statements.  Make corrections.
+
+Write a program that sets a password as ‘changeme’ and asks the user to enter the password and keeps asking until the correct password is entered and then says ‘Accepted’. 
+The program should count how many attempts the user has taken and tell them after they have been accepted. 
+Extra Challenge: 
+If the user takes more than 5 attempts the program should say, ‘Access denied, please press enter to exit and contact security to reset your password’
+
+
+password=("changeme!")
+count=0
+while count<=5:
+userinput=input(“enter password”)
+count=count+1
+if user==password:
+print(“bingo”)
+break
+elif userinput!=password:
+print(“try again”)
+print(“Attempt Number”+str(count))
+if count==5:
+print(“Access denied”)
+break
+    guess =input("Enter your password = ")
+    if guess == password:
+        print("accepted")
+
+    else:
+        print("Declined")
