@@ -1,0 +1,41 @@
+class Student():
+	firstname=''
+	lastname=''
+	courseno=0
+	course=''
+	
+	def __init__(self,lastname="Gurung", firstname="Amit", courseno=218989, course="computer science"):
+		self._lastname = lastname
+		self._firstname = firstname
+		self._courseno = courseno
+		self._course = course
+	
+	def setLname(self,lname):
+		self._lastname=lname
+		
+	def setfName(self,fname):
+		self._firstname=fname
+		
+	def setCourseno(self,cno):
+		self._courseno=cno
+	def setCourse(self,crs):
+		self._course=crs
+
+	def getFirstName(self)	:
+		return self._firstname
+	def getLastName(self):
+		return self._lastname
+	def getCourseno(self):
+		return self._courseno
+	def getCourse(self):
+		return self._course
+	
+	def showDetails(self):
+		print("Last Name  \t:%s" %(self._lastname))
+		print("First Name \t:%s" %(self._firstname))
+		print("Course No  \t:%d" %(self._courseno))
+		print("Course     \t:%s" %(self._course))
+		
+#std1 = student()	
+#std1.showDetails()
+
