@@ -1,0 +1,72 @@
+class Car:
+	def __init__(self):
+		self._manufact=''
+		self._brand=''
+		self._maxspeed=0.0
+		self._mileage=0.0
+		self._drive = False
+	def setManufact(self,mu):
+		self._manufact=mu
+
+	def setBrand(self,br):
+		self._brand=br
+
+	def setMaxspeed(self,ms):
+		self._maxspeed=ms
+
+	def setMileage(self,mi):
+		self._mileage=mi
+
+	def carStop(self):
+		self._dirve=False
+		self._mileage +=20.0
+
+	def carStart(self):
+		self._drive=True
+
+
+	def getManufact(self):
+		return self._manufact
+	def getBrand(self):
+		return self._brand
+	def getMileage(self):
+		return self._mileage
+	def getMaxspeed(self):
+		return self._maxspeed
+	
+	def showCarinfo(self):
+		print("--------------------------------------------------------------")
+		print("Manufacture \t Brand \t Max Speed \t Mileage \t Status ")
+		print("--------------------------------------------------------------")
+		print("%s \t %s \t %.2f \t\t %.2f \t\t %s" %(self._manufact,self._brand,float(self._maxspeed),float(self._mileage),self._drive))
+
+	def carStop(self):
+		self._dirve=False
+		self._mileage = self._mileage + 20.0
+		return self._mileage 
+
+	def carStart(self):
+		self._drive = True
+		return self._drive	
+		
+		test
+		from Ten2a import Car
+
+def main():
+	c1 = Car()
+	mn= input("Enter Manufacture:  ")
+	c1.setManufact(mn)
+	sb = input ("Enter Brand of Car: ")
+	c1.setBrand(sb)
+	ms = float(input("Enter Max Speed of Car : "))
+	c1.setMaxspeed(ms)
+	ml = float(input("Enter The Mileage of Car :  "))
+	c1.setMileage(ml)
+
+	c1.showCarinfo()
+	c1.carStop()
+	print("\n\nAfter Stop Function ")
+	c1.showCarinfo()
+
+main()
+
