@@ -1,0 +1,41 @@
+class student():
+    def __init__(self,lastname="Gurung", firstname="Amit", courseno=218989, course="computer science"):
+        self._lastname = lastname
+        self._firstname = firstname
+        self._courseno = courseno
+        self._course = course
+
+std1 = student()	
+print("lastname\t %s" %(std1._lastname))
+print("firstname\t%s" %(std1._firstname))
+print("courseno\t%d" %(std1._courseno))
+print("course\t%s" %(std1._course))
+
+std2 = student("Thapa","Gorkhe",34534,"Management")	
+print("lastname\t %s" %(std2._lastname))
+print("firstname\t%s" %(std2._firstname))
+print("courseno\t%d" %(std2._courseno))
+print("course\t%s" %(std2._course))
+
+test
+
+#this statement import class Student from student.py file
+from student import Student
+
+def main():
+#this statement creates an object of student
+	std1 = Student()
+#print details by calling showDetails function define in Student class
+	std1.showDetails()
+
+	print()
+#this function set/change the first name of an object std1
+	std1.setfName("Jhon")
+# Get input from user and set Last name to given input
+	ln = input("Input Last Name:  ")
+	std1.setLname(ln)
+
+	std1.showDetails()
+
+# calling the main function
+main()
