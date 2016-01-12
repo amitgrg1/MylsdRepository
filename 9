@@ -1,0 +1,51 @@
+class CashRegister :
+   
+   def __init__(self) :
+      self._itemCount = 0
+      self._totalPrice = 0.0
+      
+   
+   def addItem(self, price) :
+      self._itemCount = self._itemCount + 1
+      self._totalPrice = self._totalPrice + price 
+      
+   
+   def getTotal(self) :
+      return self._totalPrice
+
+   def getCount(self) :
+      return self._itemCount
+
+   def clear(self) :
+      self._itemCount = 0
+      self._totalPrice = 0.0
+
+   def giveChange(self, payment) :
+      return payment-self._totalPrice
+
+
+test
+
+from nine import CashRegister
+
+def main():
+	c1 = CashRegister()
+# supplying price from program as 500	
+	c1.addItem(500)
+#getting price from user	
+	p1 = float(input("Enter the price : "))
+	c1.addItem(p1)
+# to know the item count
+	print("The Total Items %d" %int(c1.getCount()))
+
+# To get Total
+	print("Your Total is {%.2f}" %float(format(c1.getTotal())))
+
+# For Payment
+	py = float(input("Please Enter your Payment"))
+	print("The Change money : {%.2f}" %float(format(c1.giveChange(py))))
+
+#calling main function
+main()
+
+
