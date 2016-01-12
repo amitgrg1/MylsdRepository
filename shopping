@@ -1,0 +1,20 @@
+#ItemsToShop is a list that will hold the shopping list
+ItemsToShop = []
+# This count variable is used later for removing last empty item from the List
+
+count = 0
+# The while loop is the infinite loop it keep asking until only the Enter/retrun key is pressed
+while 1:
+	count +=1
+#Prompt for user to make shopping list
+	items = input("Please enter the item for shopping. Type Enter/return key to End items:  ")
+#The list is append in the list even if it a empty one
+	ItemsToShop.append(items)
+#If The items shopped is empty than it  will break the infinite loop
+	if items == '' : break
+	
+#this will remove last list that is empty one
+ItemsToShop.pop(count-1)
+print("\nYour Shopping lists are")
+print(ItemsToShop)
+	
