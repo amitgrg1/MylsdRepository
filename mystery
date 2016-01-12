@@ -1,0 +1,16 @@
+def mystery(n):
+#this is the base criteria to exit from recursive function
+#When n become less than or equal to 0 the function will extend
+#otherwise it will add number with by deducting one for each call
+	if n <= 0:
+		return 0
+	else:
+		return n + mystery(n-1)
+
+result =0
+result = mystery(4)
+print (result)
+
+# The recursive function mystery will add number until it reached to zero
+#here we have passed number 4 so the function will return 4,3,2,1 and return the sum as 10.
+# as 4 + 3 + 2 + 1 = 10
