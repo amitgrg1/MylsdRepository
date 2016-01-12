@@ -1,0 +1,11 @@
+#this is for the printing the format as output
+print (' 1\t 2\t 3')
+print ('x\tx\tx')
+print ('-----------------------')
+
+#this loop runs from 5 time
+for row in range(1,6):
+#this will print single, square and queeb
+#The %d will print interger number and the number
+#between % and d specify the space 
+	print("%d %7d %7d"%(row,row**2,row**3))
