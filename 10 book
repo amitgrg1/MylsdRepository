@@ -1,0 +1,68 @@
+class Book :
+   
+   def __init__(self) :
+      self._Title = ''
+      self._Author = ''
+      self._yofpub=''
+      
+   
+   def addBook(self, title,author,yearofpub) :
+      self._Title=title
+      self._Author=author
+      self._yofpub=yearofpub
+      
+# gettting the values of book   
+   def getBookTitle(self) :
+      return self._Title
+
+   def getBookAuthor(self) :
+      return self._Author
+
+   def getBookPub(self):
+      return self._yofpub
+
+# the following function will set the values
+# to Title, Author, Year of Publication
+  
+   def setBookTitle(self,t) :
+      self._Title=t
+
+   def setBookAuthor(self,A) :
+      self._Author = A
+
+   def setBookPub(self,y):
+      self._yofpub=y
+
+# clrear all values
+   def clear(self) :
+      self._Title = ''
+      self._Author = ''
+      self._yofpub=''
+# The following fucntion display all the inforamation of books
+   def showBook(self):
+      print("\nThe Books Details are")
+      print("-------------------------------------------------------------------")
+      print("Book Name \t\t Author\t\t\t Year of Publication")
+      print("-------------------------------------------------------------------")
+      print("%s\t\t %s\t\t %s"%(self._Title,self._Author,self._yofpub))
+
+     
+     test
+     from Ten1a import Book
+
+def main():
+	b1 = Book()
+	b1.addBook("Richest Man in Babylon","George S. Clason","2015")
+	b1.showBook()
+
+	b2 = Book()
+	title =input("Enter Book Title:  ")
+	b2.setBookTitle(title)
+	Au = input("Enter Author Name:  ")
+	b2.setBookAuthor(Au)
+	py = input("Enter Publication Year: ")
+	b2.setBookPub(py)
+	b2.showBook()
+	
+
+main()
